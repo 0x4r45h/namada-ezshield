@@ -59,7 +59,7 @@ type Model struct {
 func InitialModel() Model {
 	s := spinner.New()
 	s.Spinner = spinner.Dot
-	s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
+	s.Style = lipgloss.NewStyle().Foreground(config.NamadaYellow)
 	var inputs = make([]textinput.Model, 7)
 
 	inputs[sourceAccount] = textinput.New()

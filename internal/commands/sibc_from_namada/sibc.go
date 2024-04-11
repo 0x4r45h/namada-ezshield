@@ -52,7 +52,7 @@ type Model struct {
 func InitialModel() Model {
 	s := spinner.New()
 	s.Spinner = spinner.Dot
-	s.Style = lipgloss.NewStyle().Foreground(lipgloss.Color("205"))
+	s.Style = lipgloss.NewStyle().Foreground(config.NamadaYellow)
 	var inputs = make([]textinput.Model, 5)
 
 	inputs[sourceAccount] = textinput.New()
@@ -70,8 +70,8 @@ func InitialModel() Model {
 
 	inputs[token] = textinput.New()
 	inputs[token].Placeholder = "The transfer token"
-	inputs[token].CharLimit = 60
-	inputs[token].Width = 60
+	inputs[token].CharLimit = 68
+	inputs[token].Width = 76
 	inputs[token].Prompt = ""
 
 	inputs[amount] = textinput.New()

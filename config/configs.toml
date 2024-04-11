@@ -1,0 +1,11 @@
+[namada]
+node = 'http://localhost:29657'
+chain-id = 'local.a27a40378d9328e44aed1fc9'
+[namada.osmosis]
+channel-id = 'channel-1'
+
+[osmosis]
+node = 'http://localhost:26657'
+chain-id = 'localosmosis'
+[osmosis.namada]
+channel-id = 'channel-1'
